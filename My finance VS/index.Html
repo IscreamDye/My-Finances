@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My finances</title>
+  <link rel="stylesheet" href="/Styles/Styles.Css"> 
+</head>
+
+
+<body>
+  <div class="titleContainer">
+    <div class="header">
+      <h1>My finances</h1>
+    </div>
+  </div>
+  
+
+<!--
+<div class="monthFrame">
+      <div class="monthName">
+        <p id="Month name">january</p>
+        <button class="deleteMonth">Delete</button>
+      </div>
+      <div class="entryContainer">
+            <p>My salary:</p>
+            <p id="salaryAmount">500</p>
+            <p>Total expanses:</p>
+            <p class="totalExpanses">0</p>
+      </div>
+          
+            <div class="enteryFrame">
+              <p>Expanse:</p>
+              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Amount">
+              <button id="entryButton">Add new entry +</button>
+            </div>
+            <div id="newExpanses"></div>
+</div>
+-->
+
+<div class="allMonths" id="allMonthsFrame"></div>
+
+
+<div class="monthButtonFrame">
+  <button class="monthButton" id="open-popup-btn">Add month +</button>
+</div>
+
+
+
+
+<div id="popup-container" class="popup">
+  <div class="popup-content">
+      <span id="close-popup-btn" class="close">&times;</span>
+      <h2>Add new month</h2>
+      <p>Fill info about this month</p>
+      <input type="text" placeholder="Month name">
+      <input type="text" placeholder="Salary">
+      <button class="addMonthSalary" id="addInfo">add</button>
+  </div>
+</div>
+
+<div id="overlay"></div>
+
+  
+  <script src="JS/javaScript.js"></script>
+</body>
+</html>

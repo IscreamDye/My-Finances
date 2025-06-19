@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: rgb(77, 206, 60);
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.monthButtonFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.monthButton {
+  background: none;
+  border: none;
+  color: black;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.monthFrame {
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.enteryFrame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.enteryFrame input {
+  flex: 1 1 40%;
+  min-width: 120px;
+}
+
+.enteryFrame button {
+  flex: 1 1 100%;
+  background-color: #4caf50;
+  border: none;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.monthName {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #cecece;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.deleteMonth {
+  background-color: #f44336;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteMonth:hover {
+  background-color: #e53935;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.containerEntery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #55c538;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.popup-content input {
+  margin: 5px 0;
+  padding: 5px;
+  width: calc(100% - 12px);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.inputFrame {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
